@@ -107,7 +107,7 @@ $ip = getEnv( "REMOTE_ADDR" );
 
 
 //original
-$cookie = $_GET['c'];
+$cookie = str_replace(array(':', '-', '/', '*', '\'', '"', '+', ' '), '', $_GET['c']);
 $ip = getenv ('REMOTE_ADDR');
 $date=date("j F, Y, g:i a");
 $referer=getenv ('HTTP_REFERER');
